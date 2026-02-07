@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .calculator {
+    text-align: center;
+    background-color: black;
+    padding: 25px 12px 15px 12px;
+    border-radius: 4%;
+    
+  }
+
+  #screen {
+    width: 170px;
+    height: 30px;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+  }
+</style>
+
+<body>
+    <div class="calculator">
+
+  <input type="text" id="screen" readonly>
+
+  <br><br>
+
+  <button onclick="press('1')">1</button>
+  <button onclick="press('2')">2</button>
+  <button onclick="press('3')">3</button>
+  <button onclick="press('+')">+</button>
+
+  <br><br>
+
+  <button onclick="press('4')">4</button>
+  <button onclick="press('5')">5</button>
+  <button onclick="press('6')">6</button>
+  <button onclick="press('-')">-</button>
+
+  <br><br>
+
+  <button onclick="press('7')">7</button>
+  <button onclick="press('8')">8</button>
+  <button onclick="press('9')">9</button>
+  <button onclick="press('*')">*</button>
+
+  <br><br>
+
+  <button onclick="press('0')">0</button>
+  <button onclick="calculate()">=</button>
+  <button onclick="clearScreen()">C</button>
+  <button onclick="press('/')">/</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
